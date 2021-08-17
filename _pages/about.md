@@ -1,0 +1,13 @@
+---
+title : "About Me"
+permalink: /about/
+layout: single
+---
+
+
+
+## About
+
+* Fusion electronic engineering at Hanyang university.
+* Studying MA degree for Machine learning engineering.
+* This Github page is for recording my research and study.
