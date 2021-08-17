@@ -12,3 +12,4 @@ author_profile : true
 * Fusion electronic engineering at Hanyang university.
 * Studying MA degree for Machine learning engineering.
 * This Github page is for recording my research, study and daily life.
+* Hope you enjoy :)
