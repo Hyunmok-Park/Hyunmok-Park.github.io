@@ -8,7 +8,7 @@ tags:
   - machine learning
  
 use_math: true
-date : true
+show_date : true
 ---
 
 ### Experiment 1. Generalization across graph topologies
