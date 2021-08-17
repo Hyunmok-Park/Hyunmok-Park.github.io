@@ -5,7 +5,7 @@ layout: single
 author_profile : true
 ---
 
-### 1. GNN Out-of-distibution(OOD) generalization
+### 1. GNN Out-of-distribution(OOD) generalization
 
 - Graph neural network (GNN) is a general framework for using deep neural networks on graph data. 
 - But little work has been done on understanding under what conditions GNNs can be used as a core module for building general inference models. 
