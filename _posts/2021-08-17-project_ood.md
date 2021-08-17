@@ -37,10 +37,10 @@ use_math: true
 
 - Observations
   - Generalizability
-        - (Probably) All GNNs typically generalize to the graphs that matches the average unique degree of the training data, which is characterized by the vertical blue band in PCA.
-        - Repeat the same experiment $|V|$=16 & 100 by adding “skip-connection” to see if the band-like generalization pattern is indeed the signature of the attention module only
-        - Skip-connection does not show band-pattern. 
-        - *Mean(degree)* of train/test dataset are similar. There are little deflection in column 5 probably caused by lack of test graph data.
+    - (Probably) All GNNs typically generalize to the graphs that matches the average unique degree of the training data, which is characterized by the vertical blue band in PCA.
+    - Repeat the same experiment $|V|$=16 & 100 by adding “skip-connection” to see if the band-like generalization pattern is indeed the signature of the attention module only
+    - Skip-connection does not show band-pattern. 
+    - *Mean(degree)* of train/test dataset are similar. There are little deflection in column 5 probably caused by lack of test graph data.
 
 - Trainability
    - (Figure 2) The performance of attention model (pale blue in 2nd row) looks worse than the rest (solid blue in 1st & 3rd rows), and wonder if it is statistically significant. Or is it due to the color range in a color bar?
