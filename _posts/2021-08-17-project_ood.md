@@ -38,7 +38,7 @@ use_math: true
 - Observations
   - Generalizability
         - (Probably) All GNNs typically generalize to the graphs that matches the average unique degree of the training data, which is characterized by the vertical blue band in PCA.
-        - Repeat the same experiment |V|=16 & 100 by adding “skip-connection” to see if the band-like generalization pattern is indeed the signature of the attention module only
+        - Repeat the same experiment $|V|$=16 & 100 by adding “skip-connection” to see if the band-like generalization pattern is indeed the signature of the attention module only
         - Skip-connection does not show band-pattern. 
         - *Mean(degree)* of train/test dataset are similar. There are little deflection in column 5 probably caused by lack of test graph data.
 
@@ -50,18 +50,18 @@ use_math: true
 ### Experiment 2. Generalization across graph sizes
 
 1. **Random graphs**
-   - Attention network show most strict band-like generalization pattern. Generalization performance of NodeGNN, however, outperforms the others over entire test graph.
-   - Degree distribution of train graph set(especially mean value of degree) play a key role in generalization on test graph set even graph sizes are different.
-         - GNN training on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+  - Attention network show most strict band-like generalization pattern. Generalization performance of NodeGNN, however, outperforms the others over entire test graph.
+  - Degree distribution of train graph set(especially mean value of degree) play a key role in generalization on test graph set even graph sizes are different.
+    - GNN training on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005109412_Unknown.png)
 
-   - GNN testing on |V|=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
-   - Tip: After sampling all random graphs, for speed-up, we may collect ground truth marginals from graphs on the left half in PCA assuming that average/max degree matters.
+ - GNN testing on |V|=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+ - Tip: After sampling all random graphs, for speed-up, we may collect ground truth marginals from graphs on the left half in PCA assuming that average/max degree matters.
 
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005387118_Unknown.png)
   
-   - GNN testing on |V|=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+ - GNN testing on |V|=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005984667_Unknown.png)
 
