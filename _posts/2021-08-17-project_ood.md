@@ -17,11 +17,11 @@ use_math: true
 ![img](https://paper-attachments.dropbox.com/s_9CDAC1F5BF293DE3A98D349DDB337452C1DCE34D63AD0A4072478C05CD9DF560_1611725134009_image.png)
 
 - Observations
-  - The small basin around each training graph (red triangle in Fig. 1) along the axis of network topology shows that GNNs generalize best to the networks of the same topology with a training dataset.
-  - Crucially, however, the size of the basin varies with what network topology GNNs were trained on, suggesting that 15 structured graphs in this experiment are not likely to be of equal distance from each other in contrast with their arrangement in Figure 1. 
-  - We next examine the generalization pattern by training GNNs on graphs from coupling strengths of wider distributions and find that, notably, the topology-dependent predictive pattern is preserved (three color codes in Figure. 1), although the performance degrades as $\sigma_{J}$ increases and the pattern becomes less prominent at stronger couplings, possibly due to being in the hard inference regime at strongly coupled networks.
-  - We hypothesize that how far GNNs could generalize to relies on the proximity between training and test graphs in a latent graph topological space.
-  - In an attempt to address this, we explore the space of random graphs to single out the effects of various graph properties.
+ - The small basin around each training graph (red triangle in Fig. 1) along the axis of network topology shows that GNNs generalize best to the networks of the same topology with a training dataset.
+ - Crucially, however, the size of the basin varies with what network topology GNNs were trained on, suggesting that 15 structured graphs in this experiment are not likely to be of equal distance from each other in contrast with their arrangement in Figure 1. 
+ - We next examine the generalization pattern by training GNNs on graphs from coupling strengths of wider distributions and find that, notably, the topology-dependent predictive pattern is preserved (three color codes in Figure. 1), although the performance degrades as $\sigma_{J}$ increases and the pattern becomes less prominent at stronger couplings, possibly due to being in the hard inference regime at strongly coupled networks.
+ - We hypothesize that how far GNNs could generalize to relies on the proximity between training and test graphs in a latent graph topological space.
+ - In an attempt to address this, we explore the space of random graphs to single out the effects of various graph properties.
   
 2. **Random graphs**
 
@@ -50,13 +50,13 @@ use_math: true
 1. **Random graphs**
    - Attention network show most strict band-like generalization pattern. Generalization performance of NodeGNN, however, outperforms the others over entire test graph.
    - Degree distribution of train graph set(especially mean value of degree) play a key role in generalization on test graph set even graph sizes are different.
-     - GNN training on $\|V\|$=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+     - GNN testing on $\|V\|$=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005109412_Unknown.png)
 
-   - GNN testing on $\|V\|$=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+     - GNN testing on $\|V\|$=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005387118_Unknown.png)
 
-   - GNN testing on $\|V\|$=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+     - GNN testing on $\|V\|$=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005984667_Unknown.png)
 
 
@@ -84,10 +84,10 @@ use_math: true
 5. Regularization
    - Place dropout/batchnorm1D layer before ReLU activation in every 2 layer MLP(Output, message function). 
      1. Dropout
-        - MLP : Linear → Dropout(p = 0.1) → ReLU → Linear → Dropout(p=0.5) → ReLU → Linear
+     MLP : Linear → Dropout(p = 0.1) → ReLU → Linear → Dropout(p=0.5) → ReLU → Linear
 
      2. BatchNorm(Only in Output function)
-        - MLP : Linear → BatchNorm1D → ReLU → Linear → BatchNorm1D → ReLU → Linear
+     MLP : Linear → BatchNorm1D → ReLU → Linear → BatchNorm1D → ReLU → Linear
 
 | **Graph Topologies** **(GT)** | **Graph Features** **(GF)**$\sigma_{J}$**,** $\sigma_{b}$ **= 0.****25** | **Graph Sizes** **(GS)**$\|V\|$ | **(train config) →** **(test** **config)** |
 | ----------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------ |
