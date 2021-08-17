@@ -4,6 +4,10 @@ main:
     url: /about
   - title: "Projects"
     url: /project
+  - title: "Columns"
+    url: /column
+  - title: "Article"
+    url: /article
   - title: "Category"
     url: /categories
   - title: "Daylife"
