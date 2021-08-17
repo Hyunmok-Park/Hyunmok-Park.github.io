@@ -17,11 +17,11 @@ use_math: true
 ![img](https://paper-attachments.dropbox.com/s_9CDAC1F5BF293DE3A98D349DDB337452C1DCE34D63AD0A4072478C05CD9DF560_1611725134009_image.png)
 
 - Observations
- - The small basin around each training graph (red triangle in Fig. 1) along the axis of network topology shows that GNNs generalize best to the networks of the same topology with a training dataset.
- - Crucially, however, the size of the basin varies with what network topology GNNs were trained on, suggesting that 15 structured graphs in this experiment are not likely to be of equal distance from each other in contrast with their arrangement in Figure 1. 
- - We next examine the generalization pattern by training GNNs on graphs from coupling strengths of wider distributions and find that, notably, the topology-dependent predictive pattern is preserved (three color codes in Figure. 1), although the performance degrades as $\sigma_{J}$ increases and the pattern becomes less prominent at stronger couplings, possibly due to being in the hard inference regime at strongly coupled networks.
- - We hypothesize that how far GNNs could generalize to relies on the proximity between training and test graphs in a latent graph topological space.
- - In an attempt to address this, we explore the space of random graphs to single out the effects of various graph properties.
+  - The small basin around each training graph (red triangle in Fig. 1) along the axis of network topology shows that GNNs generalize best to the networks of the same topology with a training dataset.
+  - Crucially, however, the size of the basin varies with what network topology GNNs were trained on, suggesting that 15 structured graphs in this experiment are not likely to be of equal distance from each other in contrast with their arrangement in Figure 1. 
+  - We next examine the generalization pattern by training GNNs on graphs from coupling strengths of wider distributions and find that, notably, the topology-dependent predictive pattern is preserved (three color codes in Figure. 1), although the performance degrades as $\sigma_{J}$ increases and the pattern becomes less prominent at stronger couplings, possibly due to being in the hard inference regime at strongly coupled networks.
+  - We hypothesize that how far GNNs could generalize to relies on the proximity between training and test graphs in a latent graph topological space.
+  - In an attempt to address this, we explore the space of random graphs to single out the effects of various graph properties.
   
 2. **Random graphs**
 
@@ -36,10 +36,10 @@ use_math: true
 
 - Observations
   - Generalizability
-    - (Probably) All GNNs typically generalize to the graphs that matches the average unique degree of the training data, which is characterized by the vertical blue band in PCA.
-    - Repeat the same experiment $\|V\|$=16 & 100 by adding “skip-connection” to see if the band-like generalization pattern is indeed the signature of the attention module only
-    - Skip-connection does not show band-pattern. 
-    - *Mean(degree)* of train/test dataset are similar. There are little deflection in column 5 probably caused by lack of test graph data.
+   - (Probably) All GNNs typically generalize to the graphs that matches the average unique degree of the training data, which is characterized by the vertical blue band in PCA.
+   - Repeat the same experiment $\|V\|$=16 & 100 by adding “skip-connection” to see if the band-like generalization pattern is indeed the signature of the attention module only
+   - Skip-connection does not show band-pattern. 
+   - *Mean(degree)* of train/test dataset are similar. There are little deflection in column 5 probably caused by lack of test graph data.
 
 - Trainability
   - (Figure 2) The performance of attention model (pale blue in 2nd row) looks worse than the rest (solid blue in 1st & 3rd rows), and wonder if it is statistically significant. Or is it due to the color range in a color bar?
