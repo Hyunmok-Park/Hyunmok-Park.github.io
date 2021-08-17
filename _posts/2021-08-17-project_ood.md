@@ -1,12 +1,13 @@
 ---
 title:  "Out-of-distribution(OOD) generalization"
-use_math: true
 
 categories:
   - project-ood
 tags:
   - GNN
   - machine learning
+ 
+use_math: true
 ---
 
 ### Experiment 1. Generalization across graph topologies
@@ -29,7 +30,7 @@ tags:
 
 <img src="https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1614148440482_file.png" alt="img" style="zoom:50%;" />
 
-- 1st & 2nd column: loss(NodeGNN) \approx loss(MsgGNN) ← Low
+- 1st & 2nd column: loss(NodeGNN) $\approx$ loss(MsgGNN) ← Low
 - 3rd column: loss(NodeGNN) < loss(MsgGNN)
 - 4th column: loss(NodeGNN) > loss(MsgGNN)
 - 5th column: loss(NodeGNN) \approx loss(MsgGNN) ← High
