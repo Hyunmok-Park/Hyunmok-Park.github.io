@@ -7,7 +7,7 @@ author_profile : true
 Hi :) My name is Hyum Mok Park and this Github page is for recording my research, study and daily life. 
 Thank you for visiting and hope you enjoy :)
 
-![WELCOME](https://user-images.githubusercontent.com/42180606/129748309-d7541708-00d4-4ffe-a850-546a07e1f8e3.jpg)
+![WELCOME](https://user-images.githubusercontent.com/42180606/129748309-d7541708-00d4-4ffe-a850-546a07e1f8e3.jpg, style="zoom:50%")
 
 ### INTRODUCTION
 * Department of Electronic Engineering at Hanyang University. 
