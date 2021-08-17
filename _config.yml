@@ -103,7 +103,7 @@ analytics:
 author:
   name             : "Hyunmok-Park"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Bachelor's degree at Hanyang university \n Master's degree at Hanyang university"
+  bio              : ""
   location         : "Seoul, Korea"
   email            :  "mokssi@hanyang.ac.kr"
   links:
