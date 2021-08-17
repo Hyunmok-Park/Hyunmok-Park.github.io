@@ -84,10 +84,10 @@ use_math: true
 5. Regularization
    - Place dropout/batchnorm1D layer before ReLU activation in every 2 layer MLP(Output, message function). 
    1. Dropout
-      MLP : Linear → Dropout(p = 0.1) → ReLU → Linear → Dropout(p=0.5) → ReLU → Linear
+      - MLP : Linear → Dropout(p = 0.1) → ReLU → Linear → Dropout(p=0.5) → ReLU → Linear
 
    2. BatchNorm(Only in Output function)
-      MLP : Linear → BatchNorm1D → ReLU → Linear → BatchNorm1D → ReLU → Linear
+      - MLP : Linear → BatchNorm1D → ReLU → Linear → BatchNorm1D → ReLU → Linear
 
 | **Graph Topologies** **(GT)** | **Graph Features** **(GF)**$\sigma_{J}$**,** $\sigma_{b}$ **= 0.****25** | **Graph Sizes** **(GS)**$\|V\|$ | **(train config) →** **(test** **config)** |
 | ----------------------------- | ------------------------------------------------------------ | --------------------------------- | ------------------------------------------ |
