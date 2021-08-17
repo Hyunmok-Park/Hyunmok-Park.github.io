@@ -1,5 +1,6 @@
 ---
 title:  "Out-of-distribution(OOD) generalization"
+use_math: true
 
 categories:
   - project-ood
