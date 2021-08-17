@@ -4,12 +4,12 @@ permalink: /about/
 layout: single
 author_profile : true
 ---
+Hi :) My name is Hyum Mok Park and this Github page is for recording my research, study and daily life. 
+Thank you for visiting and hope you enjoy :)
 
 ### INTRODUCTION
-* Fusion electronic engineering at Hanyang university.
-* Studying M.E. degree at Hanyang university for Machine learning engineering.
-* This Github page is for recording my research, study and daily life.
-* Thank you for visiting and hope you enjoy :)
+* Department of Electronic Engineering at Hanyang University. 
+* M.E. degree for Machine learning engineering (2020.03 ~ ).
 
 ---
 
