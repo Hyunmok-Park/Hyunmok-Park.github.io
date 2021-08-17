@@ -48,15 +48,15 @@ use_math: true
 ### Experiment 2. Generalization across graph sizes
 
 1. **Random graphs**
-- Attention network show most strict band-like generalization pattern. Generalization performance of NodeGNN, however, outperforms the others over entire test graph.
-- Degree distribution of train graph set(especially mean value of degree) play a key role in generalization on test graph set even graph sizes are different.
-  - GNN training on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+   - Attention network show most strict band-like generalization pattern. Generalization performance of NodeGNN, however, outperforms the others over entire test graph.
+   - Degree distribution of train graph set(especially mean value of degree) play a key role in generalization on test graph set even graph sizes are different.
+     - GNN training on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005109412_Unknown.png)
 
-  - GNN testing on |V|=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+   - GNN testing on |V|=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005387118_Unknown.png)
 
-  - GNN testing on |V|=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+   - GNN testing on |V|=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005984667_Unknown.png)
 
 
@@ -64,8 +64,8 @@ use_math: true
 ### Experiment 3. Generalization across network coupling strengths
 
 1. **Random graphs**
-- GNN training on |V|=16, $\sigma_{J}$ = 0.75/0.6, $\sigma_{b}$ = 0.25
-- GNN testing on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
+   - GNN training on |V|=16, $\sigma_{J}$ = 0.75/0.6, $\sigma_{b}$ = 0.25
+   - GNN testing on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 
 
 ### Experiment 4. 
