@@ -44,7 +44,6 @@ use_math: true
 
 - Trainability
    - (Figure 2) The performance of attention model (pale blue in 2nd row) looks worse than the rest (solid blue in 1st & 3rd rows), and wonder if it is statistically significant. Or is it due to the color range in a color bar?
-
    - Reinterpret Figure 1 given the lesson in random graph experiments.
 
 ### Experiment 2. Generalization across graph sizes
@@ -53,16 +52,12 @@ use_math: true
   - Attention network show most strict band-like generalization pattern. Generalization performance of NodeGNN, however, outperforms the others over entire test graph.
   - Degree distribution of train graph set(especially mean value of degree) play a key role in generalization on test graph set even graph sizes are different.
     - GNN training on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
-
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005109412_Unknown.png)
 
  - GNN testing on |V|=36, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
- - Tip: After sampling all random graphs, for speed-up, we may collect ground truth marginals from graphs on the left half in PCA assuming that average/max degree matters.
-
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005387118_Unknown.png)
-  
- - GNN testing on |V|=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 
+ - GNN testing on |V|=100, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 ![img](https://paper-attachments.dropbox.com/s_110D05CA50351F4DBCA160181BD053E1B0EA1176B24AA3F2756A511D9A70D9D6_1617005984667_Unknown.png)
 
 
@@ -70,37 +65,29 @@ use_math: true
 ### Experiment 3. Generalization across network coupling strengths
 
 1. **Random graphs**
-
    - GNN training on |V|=16, $\sigma_{J}$ = 0.75/0.6, $\sigma_{b}$ = 0.25
    - GNN testing on |V|=16, $\sigma_{J}$ = 0.3, $\sigma_{b}$ = 0.25
 
 
 ### Experiment 4. 
-
 1. Training on multiple groups of graphs
-
 2. Inductive learning
-
      a. Show statistics of graph properties in real data
      b. Figure out if the past research on real data is consistent with our findings
      c. If yes, hopefully, reinterpret why a model/task was (not) successful
 
-4. Transductive learning
-
+3. Transductive learning
    a. Figure out if our finding can be extended to the transductive setting in the same marginal prob. datasets
    b. If yes, test on real data
 
-6. Virtual Node (https://paperswithcode.com/paper/neural-message-passing-for-quantum-chemistry#code)
+4. Virtual Node (https://paperswithcode.com/paper/neural-message-passing-for-quantum-chemistry#code)
 
-7. Regularization
+5. Regularization
   - Place dropout/batchnorm1D layer before ReLU activation in every 2 layer MLP(Output, message function). 
-
    1. Dropout
-
       - MLP : Linear → Dropout(p = 0.1) → ReLU → Linear → Dropout(p=0.5) → ReLU → Linear
 
    2. BatchNorm(Only in Output function)
-
       - MLP : Linear → BatchNorm1D → ReLU → Linear → BatchNorm1D → ReLU → Linear
 
 | **Graph Topologies** **(GT)** | **Graph Features** **(GF)**$\sigma_{J}$**,** $\sigma_{b}$ **= 0.****25** | **Graph Sizes** **(GS)**$\|V\|$ | **(train config) →** **(test** **config)** |
